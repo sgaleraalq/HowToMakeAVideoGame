@@ -1,16 +1,14 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Transform player;
+    public TMP_Text scoreText;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        scoreText.text = player.position.z.ToString("0");
     }
 }
